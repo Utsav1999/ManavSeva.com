@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Appointment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--responsive-->
+    <link rel="stylesheet" type="text/css" href="dr_app.css"/> <!--index.css file lining with index.html file-->
+</head>
+<body>
+    <div class="appform">
+        <img src="usericon.png" class="iconuser">
+<?php        
+$doc=$_POST['doc'];
+?>
+        <form action="mail.php" method="post">
+            <input type="hidden" name="doc" value='$doc'>
+           
+            <p>Name</p>
+            <input type="text" name="name" placeholder="Name">
+            <p>Gender</p>
+            <select name="gender">
+                <option>SELECT</option>
+                <option>MALE</option>
+                <option>FEMALE</option>
+                <option>THIRD GENDER</option>
+            </select>
+            <p>Age</p>
+            <input type="integer" name="age" placeholder="Age">
+            <p>Phone No.</p>
+            <input type="integer" name="phn" placeholder="Ph. No.">
+            <p>Email</p>
+            <input type="text" name="email" placeholder="Email ID">
+            <p>Appontment Types</p>
+            <input type="text" name="atype" placeholder="Describe Your Issues">
+            <p>Appointment Date</p>
+            <input type="date" name="adate" placeholder="">
+            <input class="btn" type="submit" name="app" value="SUBMIT">
+        </form>
+    </div>
+</body>
+
+
+
+
+
+</html>

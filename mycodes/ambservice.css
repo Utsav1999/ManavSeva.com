@@ -1,0 +1,64 @@
+body{
+    background-image: url(amb.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.regform{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 400px;
+    padding: 50px 110px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    top: -50px;
+    left: 150px;
+}
+
+.regform p{
+    color: white;
+    font align-content: flex-start;
+    font-style: oblique;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.regform input{
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+.regform input[type="text"],
+.regform input[type="integer"],
+.regform input[type="text"],
+.regform input[type="text"]{
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.btn{
+    background: transparent;
+    border: 2px solid  white;
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}

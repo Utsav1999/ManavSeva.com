@@ -1,0 +1,71 @@
+body{
+    background-image: url(indexbg.jpg);
+    background-size:  cover;
+    background-attachment: fixed;
+}
+
+.appform{
+    height: 555px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    background: rgba(0,0,0,.3);
+    padding: 60px 170px;
+}
+
+.iconuser{
+    height: 100px;
+    width: 100px;
+    top:-50px;
+    left:200px;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.appform p{
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0;
+}
+
+.appform input{
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.appform select{
+    width: 100%;
+    padding: 10px;
+    color: black;
+    background: transparent;
+    border: none;
+    margin-bottom: 2px;
+}
+
+.appform input[type="text"],
+.appform input[type="integer"],
+.appform input[type="integer"],
+.appform input[type="text"],
+.appform input[type="date"]{
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.btn{
+    background: transparent;
+    border: 2px solid  white;
+    margin-top: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}

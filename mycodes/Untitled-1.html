@@ -1,0 +1,117 @@
+
+<html>
+    <head>
+       <!-- <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css?family=Coiny|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+        <link rel="stylesheet" href="Untitled-2.css">
+        <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-AU-compatible" content="ie=edge">
+       
+   
+    <title>
+HOME PAGE        
+</title>
+</head>
+    
+<body>
+        
+       
+<div id="apname">
+       
+  <img src="logo.gif" width="350px" height="150px" id="logo">
+        
+</div> 
+     
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <img src="logo.gif" height="70px" width="150px"> 
+    <hr size="2%" noshade="10">
+    <a href="#" ><img src="1021606.svg" height="70px" width="70px" id="docimg">Doctor List</a>
+  <a href="#"> <img src="171259.svg" heigh="70px" width="70px"></a>
+  <a href="#"> Pharmacy</a>
+  <a href="#">Contact</a>
+    
+</div>
+
+
+
+        
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+        
+<div id="main">
+    
+      <!-- Use any element to open the sidenav -->
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <b>OPEN</b></span>
+ 
+   
+ <div id="hname">
+        
+        <h2>
+            HOSPITAL NAME
+        </h2>
+        
+        
+ </div>
+        
+<div id="content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          <!--  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            
+        </p>
+        
+        
+</div>
+    
+   <form action="Untitled-4.html" method="POST">  
+    <input type="text" name="info" placeholder="enter info">   
+   <input type="submit" name="sumbit" value="Submit">
+       
+    </form>
+    
+</div>
+    
+
+    
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+    <?php
+
+$dbservername="localhost";
+$dbuser="root";    
+$dbpass="";
+$dbname="test";
+$conn=mysqli_connect($dbservername,$dbuser,$dbpass,$dbname);
+if($conn)
+{
+    isset($_POST['submit'])
+    {
+        $info=$_POST['info'];
+        $sql="insert into details(info) values('$info')";
+        $res=mysqli_query($conn,$sql);
+        if($res)
+        {
+            echo "Succesfully done";
+        }
+        else{
+            echo "failed";
+        }
+        
+    }
+    
+}
+?>
+    </body>
+</html>
